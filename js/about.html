@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SmartRetail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            padding-top: 100px;
+        }
+
+        .about-hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1534452203294-49c891ca7ee1?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--radius);
+            margin-bottom: 5rem;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 2;
+        }
+
+        .about-content h2 {
+            margin: 3rem 0 1rem;
+            color: var(--primary);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: var(--radius);
+        }
+
+        .team-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid var(--primary);
+        }
+
+        .policy-section {
+            margin-top: 6rem;
+            padding: 4rem;
+            border-radius: var(--radius);
+        }
+
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav"></nav>
+
+    <main class="container">
+        <header class="about-hero">
+            <h1 style="font-size: 3.5rem;">Our Story</h1>
+            <p>Revolutionizing retail since 2026</p>
+        </header>
+
+        <section class="about-content">
+            <h2>Mission & Vision</h2>
+            <p>At SmartRetail, our mission is to provide the highest quality organic products to our community while
+                leveraging technology to make shopping seamless and enjoyable. We envision a world where fresh, healthy
+                food is accessible to everyone at the click of a button.</p>
+
+            <h2>Our Heritage</h2>
+            <p>Starting as a small family-owned spice shop in Digital City, we've grown into a modern retail engine.
+                Despite our growth, we remain committed to our core values: integrity, quality, and customer obsession.
+            </p>
+        </section>
+
+        <section class="team-grid">
+            <div class="team-card glass">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200"
+                    alt="CEO">
+                <h3>Marcus Sterling</h3>
+                <p style="color: var(--primary);">CEO & Founder</p>
+            </div>
+            <div class="team-card glass">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200"
+                    alt="CTO">
+                <h3>Elena Rodriguez</h3>
+                <p style="color: var(--primary);">CTO</p>
+            </div>
+            <div class="team-card glass">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200"
+                    alt="COO">
+                <h3>David Chen</h3>
+                <p style="color: var(--primary);">COO</p>
+            </div>
+        </section>
+
+        <section class="policy-section glass">
+            <h2 style="text-align: center;">Our Policies</h2>
+            <div class="policy-grid">
+                <div>
+                    <h4><i class="fas fa-truck" style="color: var(--primary);"></i> Shipping Policy</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">We offer free delivery on orders over $50.
+                        Standard delivery takes 1-2 business days within city limits.</p>
+                </div>
+                <div>
+                    <h4><i class="fas fa-undo" style="color: var(--primary);"></i> Return Policy</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Fresh produce can be returned within 24
+                        hours. Packaged goods have a 7-day return window.</p>
+                </div>
+                <div>
+                    <h4><i class="fas fa-shield-alt" style="color: var(--primary);"></i> Privacy Policy</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Your data is encrypted and never shared with
+                        third parties. We use localStorage for your convenience.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

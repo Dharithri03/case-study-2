@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRetail | Modern Retail Management</title>
+    <meta name="description" content="Shop premium organic products with SmartRetail. Fresh fruits, vegetables, and more delivered to your door.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/hero.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        .featured-categories {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            position: relative;
+            height: 350px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--surface);
+            transition: var(--transition);
+        }
+
+        .category-card:hover {
+            transform: scale(1.02);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: var(--transition);
+        }
+
+        .category-card:hover img {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        .category-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        }
+
+        .offers-banner {
+            background: var(--primary);
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: var(--radius);
+            margin: 4rem 0;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-nav"></nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Future of <span style="color: var(--primary)">Retail</span> is Here</h1>
+                <p>Experience the most intuitive and seamless shopping experience. Premium quality products, authenticated security, and lightning-fast delivery.</p>
+                <div class="hero-cta">
+                    <a href="products.html" class="btn-primary" style="margin-right: 1rem;">Shop Products</a>
+                    <a href="about.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-categories container">
+        <div class="section-header">
+            <h2>Explore Categories</h2>
+            <p>Hand-picked premium selections for your lifestyle</p>
+        </div>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=400" alt="Fruits">
+                <div class="category-info">
+                    <h3>Organic Fruits</h3>
+                    <a href="products.html?category=Fruits" class="btn-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1597362868479-353396abc57c?auto=format&fit=crop&q=80&w=400" alt="Vegetables">
+                <div class="category-info">
+                    <h3>Fresh Vegetables</h3>
+                    <a href="products.html?category=Vegetables" class="btn-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=400" alt="Spices">
+                <div class="category-info">
+                    <h3>Premium Spices</h3>
+                    <a href="products.html?category=Spices" class="btn-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="offers-banner glass">
+            <h2>Today's Special: 20% OFF on all Millets!</h2>
+            <p style="margin: 1rem 0 2rem;">Use code <b>HEALTHY26</b> at checkout.</p>
+            <a href="products.html?category=Millets" class="btn-primary">Claim Offer</a>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Scripts -->
+    <script src="js/common.js"></script>
+</body>
+</html>
